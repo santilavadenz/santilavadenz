@@ -167,25 +167,25 @@
                 </button>
             </div>
         </div>
-
-        <div class="fixed inset-0 bg-brand-black z-40 flex flex-col items-center justify-center transform translate-x-full transition-transform duration-500 ease-in-out pb-[env(safe-area-inset-bottom)]" id="mobile-menu">
-            <button class="absolute top-6 right-4 text-white text-4xl p-4 focus:outline-none flex items-center justify-center" id="close-menu-btn" aria-label="Cerrar menú">
-                &times;
-            </button>
-            <div class="flex flex-col space-y-8 text-center text-xl font-serif tracking-widest w-full px-6">
-                <a href="#musica" class="mobile-link text-white hover:text-gray-400 p-2">Music</a>
-                <a href="#partituras" class="mobile-link text-white hover:text-gray-400 p-2">Sheet Music</a>
-                <a href="#sobre-mi" class="mobile-link text-white hover:text-gray-400 p-2">About Me</a>
-                <a href="#videos" class="mobile-link text-white hover:text-gray-400 p-2">Videos</a>
-                <a href="#contacto" class="mobile-link text-white hover:text-gray-400 p-2">Contact</a>
-            </div>
-            <div class="mt-16 flex space-x-8 text-3xl">
-                <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-spotify"></i></a>
-            </div>
-        </div>
     </nav>
+
+    <div class="fixed inset-0 bg-brand-black z-[60] flex flex-col items-center justify-center transform translate-x-full transition-transform duration-500 ease-in-out pb-[env(safe-area-inset-bottom)]" id="mobile-menu">
+        <button class="absolute top-6 right-4 text-white text-4xl p-4 focus:outline-none flex items-center justify-center" id="close-menu-btn" aria-label="Cerrar menú">
+            &times;
+        </button>
+        <div class="flex flex-col space-y-8 text-center text-xl font-serif tracking-widest w-full px-6">
+            <a href="#musica" class="mobile-link text-white hover:text-gray-400 p-2">Music</a>
+            <a href="#partituras" class="mobile-link text-white hover:text-gray-400 p-2">Sheet Music</a>
+            <a href="#sobre-mi" class="mobile-link text-white hover:text-gray-400 p-2">About Me</a>
+            <a href="#videos" class="mobile-link text-white hover:text-gray-400 p-2">Videos</a>
+            <a href="#contacto" class="mobile-link text-white hover:text-gray-400 p-2">Contact</a>
+        </div>
+        <div class="mt-16 flex space-x-8 text-3xl">
+            <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white p-2"><i class="fab fa-spotify"></i></a>
+        </div>
+    </div>
 
     <header id="hero" class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
         <div class="absolute inset-0 z-0">
@@ -476,11 +476,9 @@
         </div>
     </section>
 
-    <!-- New Contact Section -->
     <section id="contacto" class="py-24 md:py-32 safe-padding bg-brand-black relative scroll-mt-20">
         <div class="max-w-5xl mx-auto px-4 reveal-on-scroll">
             
-            <!-- Header -->
             <div class="text-center mb-16 md:mb-20">
                 <h2 class="font-serif text-3xl md:text-5xl text-white tracking-widest mb-6 uppercase">Contact</h2>
                 <div class="w-16 h-[2px] bg-amber-600/70 mx-auto mb-8 md:mb-10"></div>
@@ -491,17 +489,13 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
                 
-                <!-- Contact Form -->
                 <div class="w-full">
-                    <!-- FormSubmit action pointing to your email -->
                     <form action="https://formsubmit.co/santilavadenzmedia@gmail.com" method="POST" class="space-y-8">
                         
-                        <!-- Hidden inputs for FormSubmit configuration -->
                         <input type="hidden" name="_subject" value="New contact from your website!">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
 
-                        <!-- Name Field -->
                         <div>
                             <label for="name" class="block text-gray-400 text-xs tracking-widest uppercase mb-2">Name</label>
                             <input type="text" id="name" name="name" required 
@@ -509,7 +503,6 @@
                                 placeholder="Your Name">
                         </div>
                         
-                        <!-- Email Field -->
                         <div>
                             <label for="email" class="block text-gray-400 text-xs tracking-widest uppercase mb-2">Email</label>
                             <input type="email" id="email" name="email" required 
@@ -517,7 +510,6 @@
                                 placeholder="your@email.com">
                         </div>
 
-                        <!-- Message Field -->
                         <div>
                             <label for="message" class="block text-gray-400 text-xs tracking-widest uppercase mb-2">Message</label>
                             <textarea id="message" name="message" rows="4" required 
@@ -525,7 +517,6 @@
                                 placeholder="How can we collaborate?"></textarea>
                         </div>
 
-                        <!-- Submit Button -->
                         <button type="submit" 
                             class="inline-block border border-white text-white px-8 sm:px-10 py-4 sm:py-5 text-[11px] sm:text-sm tracking-[0.2em] uppercase active:bg-white active:text-black md:hover:bg-white md:hover:text-black transition-colors w-full mt-4">
                             Send Message
@@ -533,7 +524,6 @@
                     </form>
                 </div>
 
-                <!-- Info & Socials -->
                 <div class="flex flex-col text-center md:text-left h-full justify-center lg:pl-10">
                     <h3 class="text-white text-xl tracking-widest uppercase mb-4">Get In Touch</h3>
                     <p class="text-gray-400 font-light mb-10 leading-relaxed text-base sm:text-lg">
@@ -545,30 +535,24 @@
                     
                     <h3 class="text-white text-sm tracking-widest uppercase mb-6">Follow Me</h3>
                     
-                    <!-- Updated Social Links -->
                     <div class="flex justify-center md:justify-start flex-wrap gap-4 sm:space-x-4 text-2xl">
                         
-                        <!-- Instagram -->
                         <a href="https://www.instagram.com/santilavadenz?igsh=eTVzNWxnYmdvb2h5&utm_source=qr" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                         
-                        <!-- TikTok -->
                         <a href="https://www.tiktok.com/@santilavadenz?_r=1&_t=ZS-98rF2gCzdmq" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
 
-                        <!-- YouTube (Placeholder, update href when ready) -->
                         <a href="#" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
                         
-                        <!-- Spotify (Placeholder, update href when ready) -->
                         <a href="#" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="Spotify">
                             <i class="fab fa-spotify"></i>
                         </a>
                         
-                        <!-- Apple Music (Placeholder, update href when ready) -->
                         <a href="#" class="text-gray-500 hover:text-white transition-colors p-2" aria-label="Apple Music">
                             <i class="fab fa-apple"></i>
                         </a>
@@ -580,7 +564,6 @@
         </div>
     </section>
 
-    <!-- Minimal Footer (Kept to maintain copyright and JS references) -->
     <footer class="bg-brand-black py-10 border-t border-zinc-900 flex flex-col items-center text-center safe-padding">
         <a href="#hero" class="font-serif text-xl tracking-widest mb-6 text-white hover:text-gray-300 transition-colors p-2">
             santilavadenz
